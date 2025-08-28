@@ -46,7 +46,7 @@ function AskQuestion() {
   const handleAsk = async () => {
     setIsFetching(true)
     try {
-      const response = await axios.post(`${import.meta.env.VITE_SERVER_URL}/ask`, { question, cards: selectedCards })
+      const response = await axios.post(`${import.meta.env.VITE_SERVER_URL}/test`, { question, cards: selectedCards })
       setAnswer(response.data)
       console.log(response.data)
       const allQuestions = JSON.parse(localStorage.getItem("allQuestions")) || []

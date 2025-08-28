@@ -1,0 +1,18 @@
+const gifLinks = [
+  "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExemliNGdmYnhmaWphNzVlN3N4NTBuMHQ0OHc0eXBhdjJrbnhvZW4xZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/zJQF4P4dRdFYodY5XV/giphy.gif",
+  "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWE5ajI5M2NodDg4OTc1aDE5NXRqdXl5aDdydDk0MGh2bWJzcWZ6ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/UHmC5X1o4u7ZFuMo7I/giphy.gif",
+  "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXpjc2xkN3Bub21qcXliOHNjN2ppdGt2dmJubzU1NmptaDFmMXdpciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/0dvUnJTc1VSaHzJsE3/giphy.gif",
+  "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXN5NmQxZTRicTkzZzFzb3U3M3J3dTBtbng1NWhpYXNtM2kybnZwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/JBQVCxZyWwDnbkqrQ3/giphy.gif",
+  "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExam5rbHJtM3VtOGJ6cXE2M2VnZ2w2Z3ZodXVzbzZvdzkzaXhuY3I3NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/20c9YusHzgVxP96x4i/giphy.gif",
+  "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3JmZ2c4MWY1Y2NoOHZwMWgzM25qOHdid2N0YW95MTFwY3lqYjl2ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/UkVqI3quZ0r4bwka5r/giphy.gif",
+  "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjA3ODlnNm9vczY0dXFqams1Yzc3dmpmYjZvMTRieDB1YTA1anQxdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/e795hULvZ2le8TYAm4/giphy.gif",
+  "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2dydXE0eTF4eHUzdjF4bWdmMHV0d2tycjVyYmowcTY2ZjVrN3NyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/zlvuEoeHfjUmoxMNlv/giphy.gif",
+  "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExazBtYThjMHBodDZ0aWppM2V3MzZicGhuY3Z5b2FiMzZmbGNudnAwNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/6cpxMD2BQoEQDCWd4d/giphy.gif",
+  "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzQ2ZnJkM2YyamJleWU0YW9ldGkxcjYxMnVmczQ2bWZ1MnJhbW9nYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/w2GqBjAAuMkno8xx8j/giphy.gif",
+  "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDFjdTBiMGR4NGU1OTg0ZWIwZG1oNmI0MTVnZHgzaWRiaG5lcmxuMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/bY97hbzwJ9fApnVRGy/giphy.gif",
+  "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXNpb3lhNTB2aGJ4NDU4ZGg2NXg1dHUzaGh0d3JlNzQ2M3Z0ZGJxaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/CcmoBKPW3PNXRy9RLq/giphy.gif",
+  "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG5vZDh0Y2xjcDcwN3dkdDJnYmRjY3hucXQ0bG5laWFrbW80OHV5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/xTWrlIBlMS8UUSKrNR/giphy.gif",
+  "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYndibnk0YjlnZnoxdTZhaHY4bHVudWhqMnQyZjJvenQwNG9yMWVxZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/wcWUICEUu37FzuHvmi/giphy.gif"
+]
+
+export default gifLinks
