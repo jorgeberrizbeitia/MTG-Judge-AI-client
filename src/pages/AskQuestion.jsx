@@ -35,7 +35,7 @@ function AskQuestion() {
 
   const getData = async () => {
     try {
-      const response = await axios.get("http://localhost:5005/cards")
+      const response = await axios.get(`${import.meta.env.VITE_SERVER_URL}/cards`)
       console.log("loaded cards", response.data.cards.length)
       setAllCards(response.data.cards)
     } catch (error) {
@@ -46,7 +46,7 @@ function AskQuestion() {
   const handleAsk = async () => {
     setIsFetching(true)
     try {
-      const response = await axios.post("http://localhost:5005/ask", { question, cards: selectedCards })
+      const response = await axios.post(`${import.meta.env.VITE_SERVER_URL}/ask`, { question, cards: selectedCards })
       setAnswer(response.data)
       console.log(response.data)
       const allQuestions = JSON.parse(localStorage.getItem("allQuestions")) || []
