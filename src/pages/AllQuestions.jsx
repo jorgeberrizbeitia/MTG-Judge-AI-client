@@ -49,7 +49,7 @@ function AllQuestions() {
   }
 
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+    <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }} className="fade-in">
       <Typography variant="h4" gutterBottom>
         All your questions
       </Typography>
@@ -63,7 +63,7 @@ function AllQuestions() {
       <List sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
         {allQuestions.map((question, i) => (
           <Card key={i}>
-            <CardActionArea onClick={() => handleOpen(question)}>
+            <CardActionArea onClick={() => handleOpen(question)} disableRipple>
               <CardContent>
                 <Typography variant="body1" gutterBottom noWrap>
                   {question.question}
@@ -78,7 +78,7 @@ function AllQuestions() {
       </List>
 
       {/* Modal with details */}
-      <Dialog open={open} onClose={handleClose} fullWidth maxWidth="md">
+      <Dialog open={open} onClose={handleClose} fullWidth maxWidth="md" className="fade-in">
         {selected && (
           <>
             <DialogTitle>Question Details</DialogTitle>

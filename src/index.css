@@ -13,13 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 
   text-align: center;
-
 }
-
 
 .fade-in {
   opacity: 0;
-  animation: fadeIn 0.5s ease forwards;
+  /* animation: fadeIn 0.4s ease forwards; */
+  animation: fadeIn 0.4s ease forwards;
 }
 
 @keyframes fadeIn {

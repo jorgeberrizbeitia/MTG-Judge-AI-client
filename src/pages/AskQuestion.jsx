@@ -46,9 +46,15 @@ function AskQuestion() {
   const handleAsk = async () => {
     setIsFetching(true)
     try {
-      const response = await axios.post(`${import.meta.env.VITE_SERVER_URL}/test`, { question, cards: selectedCards })
+      const response = await axios.post(`${import.meta.env.VITE_SERVER_URL}/ask`, { question, cards: selectedCards })
       setAnswer(response.data)
       console.log(response.data)
+
+      //TODO this is a quick fix in case sources is received as an array of strings, don't want to mess with the TypingMessage for multiple strings inside an arr now
+      if (typeof response.data.sources === "object") {
+        response.data.sources = response.data.sources.reduce((a, e) => a + e, "")
+      }
+
       const allQuestions = JSON.parse(localStorage.getItem("allQuestions")) || []
       allQuestions.push({
         question,
@@ -131,12 +137,12 @@ function AskQuestion() {
   }
 
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
+    <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }} className="fade-in">
       
       <Typography variant="h4">Ask your MTG related question</Typography>
 
       {/* Question Input */}
-      <Card sx={{ overflow: "visible" }}>
+      <Card sx={{ overflow: "visible" }} clasName="fade-in">
         <CardContent>
           <Box sx={{ position: "relative", display: "flex", flexDirection: "column", gap: 2 }}>
             <Box sx={{ display: "flex", gap: 2 }}>
